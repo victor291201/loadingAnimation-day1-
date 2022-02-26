@@ -1,0 +1,54 @@
+body{
+    background: #00012F;
+    display: grid;
+    margin:0;
+    height:100vh;
+    place-content:center;
+}
+div{
+    content: "";
+    display: block;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    grid-area: 1/1;
+    border-radius: 50px;
+}
+.elm3{
+    animation: sube3 1.5s infinite linear;
+}
+.elm2{
+    position: relative;
+    left: 100px;
+    animation: sube2 1.5s infinite linear;
+}
+.elm1{
+    position: relative;
+    right: 100px;
+    animation: sube1 1.5s infinite linear;
+}
+
+@keyframes sube3 {
+    0% {transform: translatey(0px);}
+    25% {transform: translatey(20px);}
+    50% {transform: translatey(40px)}
+    60% {transform: translatey(20px);}
+    100% {transform: translatey(0px)}
+}
+@keyframes sube2 {
+    0% {transform: translatey(0px);}
+    25% {transform: translatey(0px);}
+    50% {transform: translatey(20px)}
+    65% {transform: translatey(40px);}
+    80% {transform: translatey(20px);}
+    100% {transform: translatey(0px)}
+}
+@keyframes sube1 {
+    0% {transform: translatey(0px);}
+    15% {transform: translatey(20px);}
+    30% {transform: translatey(40px);}
+    50% {transform: translatey(20px)}
+    75% {transform: translatey(0px);}
+    100% {transform: translatey(0px)}
+}
